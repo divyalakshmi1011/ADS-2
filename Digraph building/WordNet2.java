@@ -49,10 +49,12 @@ public class WordNet2 {
 		 * Printing of directed graph.
 		 */
 		for(int v = 0; v < graph.V(); v++) {
-//			System.out.println(v);
+		System.out.print(v+ "-------------->");
 			for(int w : graph.adj(v)) {
-				System.out.println(v + "-------------->" + w);
+				System.out.print(w+" ");
 			}
+			System.out.println();
+			
 		}
 		 }
 }
